@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Polityka prywatności — Pogoda</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      line-height: 1.55;
+      background: #f4f7fb;
+      color: #10203a;
+    }
+    main {
+      width: min(42rem, calc(100% - 2rem));
+      margin: 2rem auto 3rem;
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem 1.4rem 2rem;
+    }
+    h1 { margin: 0 0 0.3rem; font-size: 1.6rem; }
+    h2 { margin: 1.6rem 0 0.4rem; font-size: 1.1rem; }
+    p, li { color: #24324a; }
+    .meta { color: #5c6b82; margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0e1624; color: #e8eef8; }
+      main { background: #162033; }
+      p, li { color: #d5deec; }
+      .meta { color: #9aabc2; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Polityka prywatności aplikacji Pogoda</h1>
+    <p class="meta">Wersja aplikacji: 1.0. Obowiązuje od 27 września 2026 r.</p>
+
+    <h2>Kto odpowiada za dane</h2>
+    <p>Administratorem danych jest wydawca aplikacji Pogoda publikowanej w Google Play. Aplikacja nie ma osobnego konta użytkownika i nie prowadzi własnej bazy użytkowników.</p>
+    <p>Kontakt w sprawie prywatności: adres e-mail wydawcy podany na karcie dewelopera w Google Play.</p>
+
+    <h2>Jakie dane przetwarza aplikacja</h2>
+    <p>Pogoda pokazuje prognozę dla wybranego miejsca. Nie zakładamy konta, nie wyświetlamy reklam i nie sprzedajemy danych.</p>
+    <ul>
+      <li><strong>Lokalizacja.</strong> Przybliżona (<code>ACCESS_COARSE_LOCATION</code>) i dokładna (<code>ACCESS_FINE_LOCATION</code>). Aplikacja pyta o nią dopiero po wybraniu „moja lokalizacja”. Nie prosimy o lokalizację w tle.</li>
+      <li><strong>Miejsca zapisane na telefonie.</strong> Wybrane miasto, ostatnia pozycja użyta do pogody, ustawienia (motyw, jednostki, alerty, widżety) oraz — jeśli użytkownik doda — do trzech klubów piłkarskich. Te dane zostają w pamięci aplikacji na urządzeniu.</li>
+      <li><strong>Powiadomienia.</strong> Poranny skrót oraz alerty deszczu, burzy i mrozu są tworzone lokalnie na telefonie. Nie ma serwera powiadomień wydawcy.</li>
+    </ul>
+
+    <h2>Po co jest lokalizacja</h2>
+    <p>Lokalizacja służy wyłącznie do pokazania pogody, nazwy miejsca i — po otwarciu mapy — warstwy mapy dla tego punktu. Bez zgody można wpisać miasto albo kod pocztowy ręcznie. Wtedy aplikacja nie odczytuje GPS.</p>
+    <p>Gdy „moja lokalizacja” jest włączona, pozycja jest odczytywana przy tym wyborze i przy odświeżeniu prognozy, kiedy aplikacja jest otwarta. Odświeżanie widżetu w tle korzysta z ostatnio zapisanej miejscowości i nie pobiera nowego odczytu GPS.</p>
+    <p>Współrzędne nie są zapisywane na serwerze wydawcy. Żeby pobrać prognozę i nazwę miejsca, aplikacja wysyła je do publicznych usług pogodowych i geokodowania:</p>
+    <ul>
+      <li>Open-Meteo (prognoza, indeks UV, pył, wyszukiwanie miast),</li>
+      <li>MET Norway / Yr (<code>api.met.no</code>),</li>
+      <li>IMGW (pomiary, model, ostrzeżenia),</li>
+      <li>ICM Uniwersytetu Warszawskiego (meteo.pl),</li>
+      <li>GIOŚ (jakość powietrza),</li>
+      <li>Nominatim / OpenStreetMap (nazwa miejsca po GPS).</li>
+    </ul>
+    <p>Po otwarciu mapy współrzędne punktu trafiają też do osadzonej mapy Airly (pył) albo Windy (burza, opad, temperatura). Te serwisy przetwarzają dane według własnych zasad.</p>
+    <p>Jeśli w aplikacji zaplanowana jest trasa, punkty trasy są wysyłane do publicznej usługi wyznaczania trasy OSRM (<code>router.project-osrm.org</code>).</p>
+
+    <h2>Czego nie robimy</h2>
+    <ul>
+      <li>Nie używamy lokalizacji do reklam, profilowania ani sprzedaży.</li>
+      <li>Nie mamy konta użytkownika ani analityki, która identyfikuje osobę.</li>
+      <li>Nie instalujemy aktualizacji spoza Google Play. Wersja 1.0 ze Sklepu aktualizuje się tylko przez Google Play.</li>
+    </ul>
+
+    <h2>Jak długo trzymamy dane</h2>
+    <p>Dane na telefonie zostają, dopóki użytkownik ich nie zmieni, nie wyczyści danych aplikacji albo jej nie odinstaluje. Wydawca nie przechowuje kopii lokalizacji na swoim serwerze, więc nie ma osobnego terminu usuwania po stronie wydawcy.</p>
+
+    <h2>Uprawnienia Androida</h2>
+    <ul>
+      <li>Internet — pobranie prognozy i map.</li>
+      <li>Lokalizacja przybliżona i dokładna — tylko do pogody dla „mojej lokalizacji”.</li>
+      <li>Powiadomienia — poranny skrót i alerty pogodowe, po osobnej zgodzie w systemie.</li>
+      <li>Uruchomienie po restarcie telefonu — żeby zaplanowane odświeżenie i alerty wróciły po włączeniu urządzenia.</li>
+    </ul>
+
+    <h2>Dzieci</h2>
+    <p>Aplikacja jest ogólną prognozą pogody. Nie jest kierowana do dzieci i nie zbiera świadomie danych dzieci.</p>
+
+    <h2>Zmiany tej polityki</h2>
+    <p>Przy zmianie sposobu przetwarzania danych zaktualizujemy tę stronę i datę u góry. Dalsze korzystanie z aplikacji po publikacji nowej treści oznacza zapoznanie się ze zmianą.</p>
+  </main>
+</body>
+</html>
