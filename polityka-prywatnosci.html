@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Polityka prywatności — Pogoda</title>
+  <title>Polityka prywatności — Integrator Pogodowy</title>
   <style>
     :root { color-scheme: light dark; }
     body {
@@ -34,15 +34,15 @@
 </head>
 <body>
   <main>
-    <h1>Polityka prywatności aplikacji Pogoda</h1>
-    <p class="meta">Wersja aplikacji: 1.0. Obowiązuje od 27 września 2026 r.</p>
+    <h1>Polityka prywatności aplikacji Integrator Pogodowy</h1>
+    <p class="meta">Wersja aplikacji: 1.0. Obowiązuje od 28 września 2026 r.</p>
 
     <h2>Kto odpowiada za dane</h2>
-    <p>Administratorem danych jest wydawca aplikacji Pogoda publikowanej w Google Play. Aplikacja nie ma osobnego konta użytkownika i nie prowadzi własnej bazy użytkowników.</p>
+    <p>Administratorem danych jest wydawca aplikacji Integrator Pogodowy publikowanej w Google Play. Aplikacja nie ma osobnego konta użytkownika i nie prowadzi własnej bazy użytkowników.</p>
     <p>Kontakt w sprawie prywatności: adres e-mail wydawcy podany na karcie dewelopera w Google Play.</p>
 
     <h2>Jakie dane przetwarza aplikacja</h2>
-    <p>Pogoda pokazuje prognozę dla wybranego miejsca. Nie zakładamy konta, nie wyświetlamy reklam i nie sprzedajemy danych.</p>
+    <p>Integrator Pogodowy pokazuje prognozę dla wybranego miejsca. Nie zakładamy konta, nie wyświetlamy reklam i nie sprzedajemy danych.</p>
     <ul>
       <li><strong>Lokalizacja.</strong> Przybliżona (<code>ACCESS_COARSE_LOCATION</code>) i dokładna (<code>ACCESS_FINE_LOCATION</code>). Aplikacja pyta o nią dopiero po wybraniu „moja lokalizacja”. Nie prosimy o lokalizację w tle.</li>
       <li><strong>Miejsca zapisane na telefonie.</strong> Wybrane miasto, ostatnia pozycja użyta do pogody, ustawienia (motyw, jednostki, alerty, widżety) oraz — jeśli użytkownik doda — do trzech klubów piłkarskich. Te dane zostają w pamięci aplikacji na urządzeniu.</li>
@@ -57,12 +57,11 @@
       <li>Open-Meteo (prognoza, indeks UV, pył, wyszukiwanie miast),</li>
       <li>MET Norway / Yr (<code>api.met.no</code>),</li>
       <li>IMGW (pomiary, model, ostrzeżenia),</li>
-      <li>ICM Uniwersytetu Warszawskiego (meteo.pl),</li>
       <li>GIOŚ (jakość powietrza),</li>
       <li>Nominatim / OpenStreetMap (nazwa miejsca po GPS).</li>
     </ul>
-    <p>Po otwarciu mapy współrzędne punktu trafiają też do osadzonej mapy Airly (pył) albo Windy (burza, opad, temperatura). Te serwisy przetwarzają dane według własnych zasad.</p>
-    <p>Jeśli w aplikacji zaplanowana jest trasa, punkty trasy są wysyłane do publicznej usługi wyznaczania trasy OSRM (<code>router.project-osrm.org</code>).</p>
+    <p>Po otwarciu mapy współrzędne punktu trafiają do osadzonej mapy Windy (burza, opad, temperatura, wiatr, chmury). Ten serwis przetwarza je według własnych zasad.</p>
+    <p>Jeśli w aplikacji sprawdzana jest pogoda na trasie, nazwy punktów z wklejonego linku są wysyłane do geokodowania Open-Meteo. Aplikacja nie wyznacza drogi na obcym serwerze tras.</p>
 
     <h2>Czego nie robimy</h2>
     <ul>
